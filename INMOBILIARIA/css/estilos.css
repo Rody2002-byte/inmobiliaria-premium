@@ -1,0 +1,295 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    box-shadow:0 3px 15px rgba(0,0,0,.2);
+}
+
+.navbar-brand{
+    font-size:1.4rem;
+}
+
+.nav-link{
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+}
+
+/* =========================
+   HERO PRINCIPAL
+========================= */
+
+.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+    url('../img/hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.overlay{
+    width:100%;
+}
+
+.hero h1{
+    font-size:4rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.4rem;
+    margin-bottom:30px;
+}
+
+/* =========================
+   TITULOS
+========================= */
+
+section h2{
+    font-weight:700;
+    color:#1b1b1b;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.card{
+    border:none;
+    overflow:hidden;
+    transition:.4s;
+    margin-bottom:25px;
+    border-radius:15px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.card img{
+    height:250px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.card h5{
+    font-weight:700;
+}
+
+.card p{
+    font-size:1.2rem;
+    color:#198754;
+    font-weight:bold;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn{
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+
+#contacto{
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b
+    );
+}
+
+#contacto h2{
+    color:white;
+}
+
+.form-control{
+    border-radius:10px;
+    padding:12px;
+}
+
+textarea{
+    min-height:120px;
+    resize:none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    font-size:.95rem;
+}
+
+/* =========================
+   EFECTO DE ENTRADA
+========================= */
+
+.card{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media(max-width:992px){
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+}
+
+/* =========================
+   RESPONSIVE CELULAR
+========================= */
+
+@media(max-width:768px){
+
+.hero{
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:2.2rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.card img{
+    height:220px;
+}
+
+}
+
+/* =========================
+   EFECTO GRADIENTE TARJETAS
+========================= */
+
+.card::before{
+
+content:'';
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:5px;
+
+background:linear-gradient(
+90deg,
+#ffc107,
+#ff6b00
+);
+
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#ddd;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ffc107;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#ff9800;
+}
+
+/* =========================
+   SOMBRAS PREMIUM
+========================= */
+
+.shadow-premium{
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.15);
+}
+
+/* =========================
+   EFECTO IMAGENES
+========================= */
+
+.card img{
+    transition:.5s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}

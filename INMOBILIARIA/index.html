@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Inmobiliaria Premium</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="#">
+🏠 Inmobiliaria HUMEREZ
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#inicio">Inicio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#casas">Casas</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#terrenos">Terrenos</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#departamentos">Departamentos</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contacto">Contacto</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section id="inicio" class="hero">
+
+<div class="overlay">
+
+<div class="container text-center text-white">
+
+<h1 data-aos="fade-up">
+Encuentra la propiedad de tus sueños
+</h1>
+
+<p data-aos="fade-up" data-aos-delay="300">
+Casas, Terrenos y Departamentos en venta
+</p>
+
+<a href="#casas" class="btn btn-warning btn-lg">
+Ver Propiedades
+</a>
+
+</div>
+</div>
+
+</section>
+
+<!-- CASAS -->
+
+<section id="casas" class="container py-5">
+
+<h2 class="text-center mb-5">Casas en Venta</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<img src="img/casa1.jpg" class="card-img-top">
+
+<div class="card-body">
+
+<h5>Casa en Achumani</h5>
+
+<p>$185.000</p>
+
+<button
+class="btn btn-primary w-100"
+onclick="seleccionarPropiedad('Casa en Achumani')">
+Solicitar Información
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<img src="img/casa2.jpg" class="card-img-top">
+
+<div class="card-body">
+
+<h5>Casa en Zona 16 de Julio</h5>
+
+<p>$220.000</p>
+
+<button
+class="btn btn-primary w-100"
+onclick="seleccionarPropiedad('Casa en Calacoto')">
+Solicitar Información
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<img src="img/casa3.jpg" class="card-img-top">
+
+<div class="card-body">
+
+<h5>Casa en Zona Sur</h5>
+
+<p>$195.000</p>
+
+<button
+class="btn btn-primary w-100"
+onclick="seleccionarPropiedad('Casa en Zona Sur')">
+Solicitar Información
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- TERRENOS -->
+
+<section id="terrenos" class="bg-light py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-5">Terrenos</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="img/terreno1.jpg">
+
+<div class="card-body">
+
+<h5>Terreno Mecapaca</h5>
+
+<p>$50.000</p>
+
+<button
+class="btn btn-success w-100"
+onclick="seleccionarPropiedad('Terreno Mecapaca')">
+Consultar
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="img/terreno2.jpg">
+
+<div class="card-body">
+
+<h5>Terreno Mallasa</h5>
+
+<p>$70.000</p>
+
+<button
+class="btn btn-success w-100"
+onclick="seleccionarPropiedad('Terreno Mallasa')">
+Consultar
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="img/terreno3.jpg">
+
+<div class="card-body">
+
+<h5>Terreno Río Abajo</h5>
+
+<p>$45.000</p>
+
+<button
+class="btn btn-success w-100"
+onclick="seleccionarPropiedad('Terreno Río Abajo')">
+Consultar
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<!-- DEPARTAMENTOS -->
+
+<section id="departamentos" class="container py-5">
+
+<h2 class="text-center mb-5">Departamentos</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="img/depa1.jpg">
+
+<div class="card-body">
+
+<h5>Departamento Sopocachi</h5>
+
+<p>$120.000</p>
+
+<button
+class="btn btn-danger w-100"
+onclick="seleccionarPropiedad('Departamento Sopocachi')">
+Consultar
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- FORMULARIO -->
+
+<section id="contacto" class="bg-dark text-white py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-4">
+Solicitar Información
+</h2>
+
+<form id="formulario">
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<input id="nombre" class="form-control" placeholder="Nombre" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<input id="telefono" class="form-control" placeholder="Teléfono" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<input id="correo" type="email" class="form-control" placeholder="Correo" required>
+</div>
+
+<div class="col-md-6 mb-3">
+<input id="presupuesto" class="form-control" placeholder="Presupuesto">
+</div>
+
+<div class="col-12 mb-3">
+<input id="propiedad" class="form-control" readonly>
+</div>
+
+<div class="col-12 mb-3">
+<textarea id="mensaje" class="form-control"></textarea>
+</div>
+
+<div class="col-12">
+<button class="btn btn-warning w-100">
+Enviar Solicitud
+</button>
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+<section class="container py-5">
+
+<h2 class="text-center mb-4">
+📅 Programar Visita
+</h2>
+
+<form id="formCita">
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<input
+id="citaNombre"
+class="form-control"
+placeholder="Nombre Completo"
+required>
+</div>
+
+<div class="col-md-6 mb-3">
+<input
+id="citaCorreo"
+type="email"
+class="form-control"
+placeholder="Correo"
+required>
+</div>
+
+<div class="col-md-6 mb-3">
+<input
+id="citaTelefono"
+class="form-control"
+placeholder="Teléfono"
+required>
+</div>
+
+<div class="col-md-6 mb-3">
+<input
+id="citaPropiedad"
+class="form-control"
+placeholder="Propiedad a visitar"
+required>
+</div>
+
+<div class="col-md-6 mb-3">
+<input
+id="fechaVisita"
+type="date"
+class="form-control"
+required>
+</div>
+
+<div class="col-md-6 mb-3">
+<input
+id="horaVisita"
+type="time"
+class="form-control"
+required>
+</div>
+
+<div class="col-12">
+<button
+type="submit"
+class="btn btn-success w-100">
+
+Agendar Visita
+
+</button>
+</div>
+
+</div>
+
+</form>
+
+</section>
+
+<footer class="bg-black text-white text-center p-3">
+© 2026 Inmobiliaria Premium
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
